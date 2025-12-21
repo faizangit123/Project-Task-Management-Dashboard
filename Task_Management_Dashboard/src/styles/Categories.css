@@ -1,0 +1,153 @@
+/* Category Styles */
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--font-size-2xs);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-shine);
+  opacity: 0.5;
+}
+
+.category-badge:hover {
+  transform: scale(1.08);
+}
+
+.category-badge span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Category Colors - Light Mode */
+.category-badge.work {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15));
+  color: #2563eb;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.category-badge.personal {
+  background: linear-gradient(135deg, rgba(217, 70, 239, 0.15), rgba(236, 72, 153, 0.15));
+  color: #c026d3;
+  box-shadow: 0 2px 8px rgba(217, 70, 239, 0.15);
+}
+
+.category-badge.shopping {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(52, 211, 153, 0.15));
+  color: #059669;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
+}
+
+.category-badge.health {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(248, 113, 113, 0.15));
+  color: #dc2626;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.15);
+}
+
+.category-badge.finance {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15));
+  color: #d97706;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+}
+
+.category-badge.learning {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(129, 140, 248, 0.15));
+  color: #4f46e5;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.category-badge.home {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(167, 139, 250, 0.15));
+  color: #7c3aed;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+}
+
+.category-badge.other {
+  background: linear-gradient(135deg, var(--color-border), var(--color-background));
+  color: var(--color-text-secondary);
+}
+
+/* Dark mode category colors */
+[data-theme="dark"] .category-badge.work {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(99, 102, 241, 0.2));
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .category-badge.personal {
+  background: linear-gradient(135deg, rgba(217, 70, 239, 0.2), rgba(236, 72, 153, 0.2));
+  color: #f0abfc;
+}
+
+[data-theme="dark"] .category-badge.shopping {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.2));
+  color: #6ee7b7;
+}
+
+[data-theme="dark"] .category-badge.health {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(248, 113, 113, 0.2));
+  color: #fca5a5;
+}
+
+[data-theme="dark"] .category-badge.finance {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.2));
+  color: #fcd34d;
+}
+
+[data-theme="dark"] .category-badge.learning {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(129, 140, 248, 0.2));
+  color: #a5b4fc;
+}
+
+[data-theme="dark"] .category-badge.home {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(167, 139, 250, 0.2));
+  color: #c4b5fd;
+}
+
+[data-theme="dark"] .category-badge.other {
+  background: linear-gradient(135deg, var(--color-surface), var(--color-border));
+  color: var(--color-text-muted);
+}
+
+/* Category dot indicator */
+.category-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.category-dot.work { background: linear-gradient(135deg, #3b82f6, #6366f1); }
+.category-dot.personal { background: linear-gradient(135deg, #d946ef, #ec4899); }
+.category-dot.shopping { background: linear-gradient(135deg, #10b981, #34d399); }
+.category-dot.health { background: linear-gradient(135deg, #ef4444, #f87171); }
+.category-dot.finance { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+.category-dot.learning { background: linear-gradient(135deg, #6366f1, #818cf8); }
+.category-dot.home { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+.category-dot.other { background: var(--color-text-muted); }
+
+/* Category in sidebar */
+.nav-item .category-dot {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Category select in forms */
+.category-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
