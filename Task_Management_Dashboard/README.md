@@ -1,11 +1,3 @@
-## ⚠️ Usage Notice & Copyright Notice
-
-This project is part of my **personal developer portfolio**.
-
-You are welcome to **view and evaluate** the source code for learning
-and recruitment purposes.  
-Commercial use or redistribution is not permitted without permission.
-
 If you are a recruiter or interviewer and would like to discuss
 this project in detail, feel free to contact me.
 

@@ -1,13 +1,7 @@
-## ⚠️ Usage Notice & Copyright Notice
+## 🗂️ Task Management Dashboard
 
-This project is part of my **personal developer portfolio**.
-
-You are welcome to **view and evaluate** the source code for learning
-and recruitment purposes.  
-Commercial use or redistribution is not permitted without permission.
-
-If you are a recruiter or interviewer and would like to discuss
-this project in detail, feel free to contact me.
+A **Task Management Dashboard** built using **React, HTML, CSS, and JavaScript**.  
+It designed to be reusable, easy to understand, and ideal for frontend practice and portfolio use.
 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Frontend%20Only](https://img.shields.io/badge/Backend-None-red)
@@ -16,13 +10,6 @@ this project in detail, feel free to contact me.
 - Semantic HTML and clean React component structure
 - Client-side state management
 - Optional localStorage persistence
-
----
-
-# 🗂️ Task Management Dashboard
-
-A **Task Management Dashboard** built using **React, HTML, CSS, and JavaScript**.  
-It designed to be reusable, easy to understand, and ideal for frontend practice and portfolio use.
 
 ---
 
@@ -149,6 +136,13 @@ npm install
 ```
 npm start
 ```
+---
+
+You are welcome to **view and evaluate** the source code for learning
+and recruitment purposes.  
+Commercial use or redistribution is not permitted without permission.
+
+---
 
 ## Open in browser:
 -  http://localhost:3000
@@ -193,5 +187,4 @@ Easily add new sections such as Experience or Education
 
 - Email: faizanrock705@gmail.com
 
-**Made with ❤️ by Faizan**
-
+---
